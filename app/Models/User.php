@@ -30,7 +30,6 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        'remember_token',
     ];
 
     /**
@@ -39,6 +38,10 @@ class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
     ];
+
+    public function setPasswordAttribute($value) //Se utiliza la funcion publica para acceder al atributo password
+    {
+        $this->attributes['password'] = bcrypt($value); // Se encripta el atributo password 
+    }
 }

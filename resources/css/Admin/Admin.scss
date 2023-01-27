@@ -1,0 +1,162 @@
+@import 'bootstrap/scss/bootstrap';
+
+$wh:white;
+$si:rgb(241, 241, 241);
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(241,241,241);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: silver;
+    border-radius: 20px;
+  }
+.sidebar
+{
+    height: 100vh;
+    width: 15%;
+    position: fixed;
+}
+body
+{
+    background: $si;
+}
+
+.wrap
+{
+    width: 75%;
+    height: 98vh;
+    margin-top:2%;
+    margin-left:21%;
+    position:absolute;
+    background: $si;
+}
+
+.container-blogs
+{
+    width: 100%;
+    .cont-blog
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-blog{
+        margin:auto;
+        width: 23%;
+        background: $wh;
+        box-shadow: 0px 0px 4px silver;
+        padding: 3px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        img{
+            width: 97%;
+            object-fit: cover;
+            height: 21vh;
+            display: block;
+            margin: 5px auto auto auto;
+            border-radius: 10px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 3px;
+            font-family: 'Segoe UI';
+        }
+        button{
+            width: 40%;
+            margin-left: 3px;
+            margin-top:8px;
+            margin-bottom: 3px;
+        }
+    }
+}
+.cont-search
+{
+    width: 100%;
+    display: flex;
+}
+.divider-screen{
+    width: 50%;
+    margin: auto;
+    padding: 3px 8px 3px 8px;
+    .input{
+        width: 40%;
+        outline: none;
+        border: 1px solid silver;
+        padding: 8px;
+        border-radius: 6px;
+    }
+    margin-bottom: 25px;
+    margin-top: 12px;
+    
+}
+.btnsearch
+{
+    width: 30%;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    border-radius: 5px;
+    background: #4EB286;
+    border:none;
+    :hover
+    {
+        background: rgb(93, 228, 149);
+        transition: .45s all;
+    }
+}
+
+.text-content
+{
+    width: 100%;
+    height: 12vh;
+}
+
+.brand
+{
+    width: 40px;
+    height: 40px;
+}
+
+.user-cont
+{
+    width: 100%;
+    padding: 1px;
+    display: flex;
+    box-shadow: 0px 0px 4px silver;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    background: $wh;
+    
+}
+.w-32
+{
+    width:32%;
+    margin:auto;
+    p{
+        padding-top:15px;
+    }
+}
+
+.forms
+{
+    width: 65%;
+    padding: 10px;
+    margin: auto;
+    background: $wh;
+    box-shadow: 0px 0px 4px $si;
+    border-radius: 12px;
+}
+
+.b21
+{
+    color:rgb(0,92,192);
+}.bold{font-weight: bold;}
+.cen{text-align: center;}
